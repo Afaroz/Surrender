@@ -12,25 +12,41 @@ body{
   background:#f2f2f2;
   color:#222;
 }
-
-/* ===== HEADER ===== */
-header{
-  background:#111;
-  color:#d4af37;
-  padding:18px 12px;
-  text-align:center;
+/* ===== PROFESSIONAL HEADER ===== */
+.site-header{
+  background:linear-gradient(135deg, #0f2a44, #163b5c); 
+  /* deep navy blue – premium & professional */
+  padding:18px 16px;
 }
 
-header h1{
+.header-inner{
+  display:flex;
+  justify-content:flex-start; /* LEFT SIDE */
+  align-items:center;
+}
+
+.header-text{
+  text-align:left;
+}
+
+.header-text h1{
   margin:0;
-  font-size:24px;
+  font-size:22px;
   letter-spacing:1px;
+  color:#f5c76a; /* soft gold (not loud) */
 }
 
-header p{
-  margin-top:6px;
-  font-size:14px;
-  color:#eee;
+.header-text p{
+  margin-top:4px;
+  font-size:13px;
+  color:#e6edf3;
+}
+
+/* Desktop polish */
+@media(min-width:768px){
+  .header-text h1{
+    font-size:28px;
+  }
 }
 
 /* ===== PRODUCT SECTION ===== */
@@ -128,15 +144,227 @@ footer a{
     font-size:32px;
   }
 }
+
+/* ===== HEADER BUTTONS ===== */
+.header-btns{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:10px;
+}
+
+.header-btns a{
+  padding:8px 14px;
+  font-size:13px;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.call-btn{
+  background:#ff9800;
+  color:#111;
+}
+
+.Insta-btn{
+  background:#25d366;
+  color:#fff;
+}
+
+.contact-btn{
+  background:#0e040c;
+  color:#fff;
+}
+
+/* ===== QTY BUTTON ===== */
+.qty{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin:8px 0;
+}
+
+.qty button{
+  width:28px;
+  height:28px;
+  border:none;
+  border-radius:50%;
+  background:#ddd;
+  font-size:16px;
+}
+
+.qty span{
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ===== ADD TO CART ===== */
+.cart-btn{
+  display:block;
+  margin:6px 10px;
+  padding:8px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  border-radius:18px;
+  font-size:13px;
+}
+
+/* ===== STICKY MOBILE BAR ===== */
+.mobile-bar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#fff;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  box-shadow:0 -4px 10px rgba(0,0,0,0.15);
+}
+
+.mobile-bar a{
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+
+.mobile-call{color:#ff5722;}
+.mobile-wa{color:#25d366;}
+.mobile-map{color:#2196f3;}
+
+@media(min-width:768px){
+  .mobile-bar{display:none;}
+}
+
+
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.floating-whatsapp{
+  position:fixed;
+  bottom:70px;           /* footer / mobile bar ke upar */
+  right:16px;
+  width:54px;
+  height:54px;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  text-decoration:none;
+  box-shadow:0 6px 14px rgba(0,0,0,0.3);
+  z-index:999;
+}
+
+
+
+.simple-footer{
+  background:#111;
+  color:#ccc;
+  padding:20px 14px 90px;
+  font-size:13px;
+  line-height:1.6;
+}
+
+.simple-footer p{
+  margin:6px 0;
+}
+
+.simple-footer strong{
+  color:#d4af37;
+  font-weight:600;
+}
+
+.simple-footer a{
+  color:#25d366;
+  text-decoration:none;
+}
+
+.footer-links{
+  margin-top:10px;
+}
+
+.footer-bottom{
+  margin-top:14px;
+  padding-top:10px;
+  border-top:1px solid #333;
+  text-align:center;
+  font-size:12px;
+  color:#aaa;
+}
+
+@media(min-width:768px){
+  .simple-footer{
+    padding-bottom:30px;
+    text-align:center;
+  }
+}
+
+
+
+
+/* ===== TRUST BOX (MOBILE FIRST) ===== */
+.trust-box {
+  box-sizing: border-box;
+  margin: 14px auto 22px;
+  padding: 16px;
+  max-width: 92%;
+  background: linear-gradient(135deg, #eaffea, #ffffff);
+  border: 2px solid #28a745;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  text-align: center;   /* ✅ MOBILE CENTER */
+}
+
+.trust-box div {
+  margin-bottom: 6px;
+}
+
+/* ===== DESKTOP VIEW ===== */
+@media (min-width: 768px) {
+  .trust-box {
+    max-width: 720px;
+    padding: 22px 28px;
+    font-size: 16px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+    text-align: left;   /* ✅ DESKTOP LEFT */
+  }
+
+  .trust-box div {
+    margin-bottom: 0;
+  }
+}
+
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
-<header>
-  <h1>SURENDER JEANS</h1>
-  <p>Premium Jeans & Garments</p>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-text">
+      <h1>SURENDER JEANS</h1>
+      <p>Premium Jeans & Garments</p>
+    </div>
+  </div>
 </header>
+
+
+<div class="header-btns">
+  <a href="tel:+919860199088" class="call-btn">📞 Call</a>
+  <a href="https://www.instagram.com/surrender.jeans/" class="Insta-btn">💬 Insta</a>
+  <a href="contact.html" class="contact-btn">📍 Contact</a>
+</div>
+
+
 
 <!-- PRODUCTS -->
 <section class="products">
@@ -206,27 +434,44 @@ footer a{
   </div>
 </section>
 
-<!-- BUSINESS INFO -->
-<section class="info">
-  <div><strong>Owner:</strong> Sunil Rajani</div>
-  <div><strong>Phone:</strong> +91 9860199088</div>
-  <div><strong>Email:</strong> surenderjeans@gmail.com</div>
-  <div><strong>GSTIN:</strong> 27AEBPR7643R1ZN</div>
-  <div>
-    <strong>Address:</strong><br>
-    Shiv Sai Complex, 1st Floor, 102,<br>
-    Behind Bharat Tea, Mat Mandir Chowk,<br>
-    Ulhasnagar – 421005
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <p>📞 <a href="tel:+919860199088">+91 9860199088</a></p>
-  <p>📧 surenderjeans@gmail.com</p>
-  <p>📍 Ulhasnagar, Maharashtra</p>
-  <p>© 2026 Surender Jeans</p>
+<div class="trust-box">
+  <div>✅ Trusted Garments Store in Ulhasnagar</div>
+  <div>✅ Quality Jeans at Best Price</div>
+  <div>✅ Latest Surender Jeans Collections & Trendy Fits</div>
+  <div>✅ Genuine Quality Fabric with Perfect Comfort</div>
+</div>
+
+<footer class="simple-footer">
+
+  <p>📞 <strong>Contact:</strong> <a href="tel:+919860199088">+91 9860199088</a></p>
+
+  <p>📍 <strong>Location:</strong> Shiv Sai Complex, 1st Floor, 102, Behind Bharat Tea, Mat Mandir Chowk, Ulhasnagar – 421005</p>
+
+  <p>👖 <strong>Shop:</strong> Surender Jeans – Premium Jeans & Garments</p>
+
+  <p>👤 <strong>Owner:</strong> Sunil Rajani</p>
+
+  <p>🧾 <strong>GSTIN:</strong> 27AEBPR7643R1ZN</p>
+
+  <p class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+
+  <div class="footer-bottom">
+    © 2026 <strong>Surender Jeans</strong>. All Rights Reserved.
+  </div>
+
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919860199088" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp"
+    class="wa-icon"
+  >
+</a>
 
 </body>
 </html>
