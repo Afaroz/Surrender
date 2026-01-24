@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surender Jeans</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f2f2f2;
+  color:#222;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#111;
+  color:#d4af37;
+  padding:18px 12px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:24px;
+  letter-spacing:1px;
+}
+
+header p{
+  margin-top:6px;
+  font-size:14px;
+  color:#eee;
+}
+
+/* ===== PRODUCT SECTION ===== */
+.products{
+  padding:14px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 2 per row */
+  gap:12px;
+}
+
+/* PRODUCT CARD */
+.product{
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.12);
+  overflow:hidden;
+  text-align:center;
+}
+
+.product img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.product h3{
+  font-size:14px;
+  margin:8px 0 4px;
+}
+
+.product p{
+  font-size:13px;
+  margin:3px 0;
+  color:#555;
+}
+
+.price{
+  font-size:15px;
+  font-weight:700;
+  color:#111;
+}
+
+.buy-btn{
+  display:block;
+  margin:10px;
+  padding:10px;
+  background:#25d366;
+  color:#fff;
+  text-decoration:none;
+  border-radius:20px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ===== INFO SECTION ===== */
+.info{
+  background:#fff;
+  margin:14px;
+  padding:18px;
+  border-radius:14px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.12);
+  font-size:14px;
+}
+
+.info div{
+  margin-bottom:6px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#111;
+  color:#ccc;
+  padding:18px 14px;
+  text-align:center;
+  font-size:13px;
+}
+
+footer p{
+  margin:6px 0;
+}
+
+footer a{
+  color:#25d366;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ===== DESKTOP ===== */
+@media(min-width:768px){
+  .products{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header h1{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>SURENDER JEANS</h1>
+  <p>Premium Jeans & Garments</p>
+</header>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+  <div class="product">
+    <img src="img1.jpg">
+    <h3>Men Slim Fit Jeans</h3>
+    <p>Size: 30–38</p>
+    <div class="price">₹1299</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="img2.webp">
+    <h3>Men Regular Jeans</h3>
+    <p>Size: 32–40</p>
+    <div class="price">₹1199</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="img3.jpg">
+    <h3>Dark Blue Denim</h3>
+    <p>Size: 30–38</p>
+    <div class="price">₹1399</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="img4.jpg">
+    <h3>Light Wash Jeans</h3>
+    <p>Size: 28–36</p>
+    <div class="price">₹1099</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+ <div class="product">
+    <img src="img5.jpg">
+    <h3>Light Wash Jeans</h3>
+    <p>Size: 28–36</p>
+    <div class="price">₹1099</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+   <div class="product">
+    <img src="img6.jpg">
+    <h3>Light Wash Jeans</h3>
+    <p>Size: 28–36</p>
+    <div class="price">₹1099</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+   <div class="product">
+    <img src="img7.jpg">
+    <h3>Light Wash Jeans</h3>
+    <p>Size: 28–36</p>
+    <div class="price">₹1099</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+
+   <div class="product">
+    <img src="img8.jpg">
+    <h3>Light Wash Jeans</h3>
+    <p>Size: 28–36</p>
+    <div class="price">₹1099</div>
+    <a class="buy-btn" href="https://wa.me/919860199088">Order on WhatsApp</a>
+  </div>
+</section>
+
+<!-- BUSINESS INFO -->
+<section class="info">
+  <div><strong>Owner:</strong> Sunil Rajani</div>
+  <div><strong>Phone:</strong> +91 9860199088</div>
+  <div><strong>Email:</strong> surenderjeans@gmail.com</div>
+  <div><strong>GSTIN:</strong> 27AEBPR7643R1ZN</div>
+  <div>
+    <strong>Address:</strong><br>
+    Shiv Sai Complex, 1st Floor, 102,<br>
+    Behind Bharat Tea, Mat Mandir Chowk,<br>
+    Ulhasnagar – 421005
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>📞 <a href="tel:+919860199088">+91 9860199088</a></p>
+  <p>📧 surenderjeans@gmail.com</p>
+  <p>📍 Ulhasnagar, Maharashtra</p>
+  <p>© 2026 Surender Jeans</p>
+</footer>
+
+</body>
+</html>
