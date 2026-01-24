@@ -12,28 +12,24 @@ body{
   background:#f2f2f2;
   color:#222;
 }
-/* ===== PROFESSIONAL HEADER ===== */
+/* ===== HEADER ===== */
 .site-header{
-  background:linear-gradient(135deg, #0f2a44, #163b5c); 
-  /* deep navy blue – premium & professional */
-  padding:18px 16px;
+  background:linear-gradient(135deg, #0f2a44, #163b5c);
+  padding:14px 16px;
 }
 
 .header-inner{
   display:flex;
-  justify-content:flex-start; /* LEFT SIDE */
   align-items:center;
+  justify-content:space-between;
 }
 
-.header-text{
-  text-align:left;
-}
-
+/* LEFT TEXT */
 .header-text h1{
   margin:0;
   font-size:22px;
   letter-spacing:1px;
-  color:#f5c76a; /* soft gold (not loud) */
+  color:#f5c76a;
 }
 
 .header-text p{
@@ -42,10 +38,19 @@ body{
   color:#e6edf3;
 }
 
-/* Desktop polish */
+/* RIGHT LOGO */
+.header-logo img{
+  height:52px;       /* 🔥 perfect size */
+  width:auto;
+}
+
+/* DESKTOP */
 @media(min-width:768px){
   .header-text h1{
     font-size:28px;
+  }
+  .header-logo img{
+    height:64px;
   }
 }
 
@@ -348,12 +353,21 @@ footer a{
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
+
+    <!-- LEFT: BRAND TEXT -->
     <div class="header-text">
       <h1>SURENDER JEANS</h1>
       <p>Premium Jeans & Garments</p>
     </div>
+
+    <!-- RIGHT: LOGO -->
+    <div class="header-logo">
+      <img src="logo.png" alt="Surender Jeans Logo">
+    </div>
+
   </div>
 </header>
+
 
 
 <div class="header-btns">
