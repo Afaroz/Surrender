@@ -8,16 +8,17 @@
 <title>Adnan Enterprises | Sewing Machines & Tailoring Solutions</title>
 <style>
 :root{
-  --ink:#111827; --muted:#667085; --navy:#0a1022; --navy2:#182449;
-  --gold:#d99a19; --gold2:#f7c95b; --cream:#fffdf7; --line:#e7eaf0;
-  --white:#ffffff; --green:#25D366; --shadow:0 20px 60px rgba(15,23,42,.10);
+  --ink:#172033; --muted:#667085; --navy:#101a35; --navy2:#263b72;
+  --gold:#c88716; --gold2:#f3b83f; --cream:#fffaf0; --line:#e6eaf2;
+  --white:#ffffff; --green:#25D366; --blue:#3157a6;
+  --shadow:0 20px 60px rgba(25,45,90,.12);
 }
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fbfcff 0%,#f7f9fc 42%,#fffdf8 100%);}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f6f9ff 0%,#ffffff 34%,#fffaf1 72%,#f5f8ff 100%);}
 a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
 .container{width:min(1160px,92%);margin:auto}
-.topbar{background:linear-gradient(90deg,#eef4fb,#f8f4e9,#eef4fb);color:#d9deed;font-size:13px;padding:9px 0}
+.topbar{background:linear-gradient(90deg,#172b57,#3157a6 48%,#9a6b18);color:#ffffff;font-size:13px;padding:10px 0;letter-spacing:.15px}
 .topbar .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);color:#111827;border-bottom:1px solid #e5eaf1;box-shadow:0 8px 30px rgba(30,50,80,.08)}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);color:#111827;border-bottom:1px solid #e5eaf1;box-shadow:0 8px 30px rgba(30,50,80,.08)}
 .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.5px}
 .logo-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--gold),#fff0bb);color:#12182a;display:grid;place-items:center;font-size:21px;box-shadow:0 8px 24px rgba(244,185,66,.25)}
@@ -26,7 +27,7 @@ a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
 .nav-links a{opacity:.86} .nav-links a:hover{opacity:1;color:var(--gold2)}
 .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 17px;font-weight:800;transition:.2s;cursor:pointer;border:0}
 .nav-cta{background:var(--gold);color:#171a25} .nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(244,185,66,.2)}
-.hero{background:radial-gradient(circle at 82% 20%,rgba(244,185,66,.24),transparent 30%),linear-gradient(135deg,#eef5ff 0%,#ffffff 48%,#fff8e8 100%);color:#111827;overflow:hidden}
+.hero{background:radial-gradient(circle at 82% 18%,rgba(243,184,63,.28),transparent 28%),radial-gradient(circle at 12% 75%,rgba(49,87,166,.12),transparent 32%),linear-gradient(135deg,#eaf1ff 0%,#ffffff 52%,#fff5dc 100%);color:#111827;overflow:hidden}
 .hero-grid{min-height:650px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:55px;padding:72px 0}
 .eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,217,120,.35);color:#ffe5a2;background:rgba(255,255,255,.05);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
 h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-3.5px;margin:20px 0 22px}
@@ -67,7 +68,7 @@ h2{font-size:clamp(31px,4vw,48px);letter-spacing:-2px;line-height:1.05;margin:9p
 .about-photo img{width:100%;height:480px;object-fit:cover;border-radius:26px}
 .checks{display:grid;gap:14px;margin-top:25px} .check{display:flex;gap:12px;align-items:flex-start} .check b{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#eafaf2;color:#11814d;font-size:13px;flex:0 0 auto}
 .check span{color:#51596c;line-height:1.55}
-.contact{background:radial-gradient(circle at 78% 20%,rgba(244,185,66,.22),transparent 25%),linear-gradient(135deg,#edf4ff,#ffffff 58%,#fff8e9);color:#111827}
+.contact{background:radial-gradient(circle at 78% 20%,rgba(243,184,63,.26),transparent 25%),radial-gradient(circle at 10% 90%,rgba(49,87,166,.12),transparent 30%),linear-gradient(135deg,#e9f0ff,#ffffff 58%,#fff5dc);color:#111827}
 .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:stretch}
 .contact-copy{padding:20px 0} .contact-copy p{color:#526078;line-height:1.7;max-width:570px}
 .contact-box{background:white;color:var(--ink);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
@@ -99,6 +100,38 @@ body::before{
 }
 .section > .container{position:relative;z-index:1}
 .service:hover,.material-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(16,20,38,.10)}
+.footer a{color:#3157a6;font-weight:800}.footer a:hover{text-decoration:underline}
+.privacy-link{margin-left:10px}
+@media(max-width:600px){.topbar{font-size:12px;text-align:center}.topbar .container span{width:100%}}
+
+.location-card{
+  display:grid;
+  grid-template-columns:72px 1fr;
+  gap:22px;
+  align-items:center;
+  padding:30px;
+  border:1px solid #dfe6f2;
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(239,245,255,.94) 58%,rgba(255,249,231,.96));
+  box-shadow:0 16px 45px rgba(30,55,100,.10);
+}
+.location-icon{
+  width:72px;height:72px;border-radius:20px;
+  display:grid;place-items:center;font-size:31px;
+  background:linear-gradient(135deg,#3157a6,#5479c4);
+  box-shadow:0 12px 28px rgba(49,87,166,.22);
+}
+.location-label{
+  color:#9a6b12;font-size:11px;letter-spacing:1.5px;
+  text-transform:uppercase;font-weight:900;
+}
+.location-content h3{font-size:24px;margin:5px 0 6px}
+.location-content p{color:var(--muted);line-height:1.65;margin:0 0 18px}
+@media(max-width:600px){
+  .location-card{grid-template-columns:1fr;padding:24px}
+  .location-icon{width:58px;height:58px;border-radius:17px;font-size:25px}
+  .location-content h3{font-size:20px}
+}
 </style>
 </head>
 <body>
@@ -116,7 +149,7 @@ body::before{
       <div>Adnan Enterprises<small>Sewing • Tailoring • Service</small></div>
     </a>
     <nav class="nav-links">
-      <a href="#machines">Machines</a><a href="#services">Services</a><a href="#materials">Kaj & Buttons</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="#machines">Machines</a><a href="#services">Services</a><a href="#materials">Kaj & Buttons</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a>
     </nav>
     <a class="nav-cta" href="https://wa.me/918446885026?text=Hello%20Adnan%20Enterprises%2C%20I%20want%20to%20know%20about%20your%20sewing%20machines.">Get Quote</a>
   </div>
@@ -349,6 +382,25 @@ body::before{
   </div>
 </section>
 
+
+<section class="section" id="location">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Find us</div><h2>Visit Adnan Enterprises.</h2></div>
+      <p>Get directions to our location for sewing machines, Kaj & Buttons, tailoring materials, and service enquiries.</p>
+    </div>
+    <div class="location-card">
+      <div class="location-icon">📍</div>
+      <div class="location-content">
+        <div class="location-label">Our Location</div>
+        <h3>Adnan Kaj Button and Tailoring Material</h3>
+        <p>Tap below to open the location directly in Google Maps and get directions.</p>
+        <a class="btn btn-primary" href="https://maps.app.goo.gl/gE4UUdgwNCmQBi5K9" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section contact" id="contact">
   <div class="container contact-grid">
     <div class="contact-copy">
@@ -361,6 +413,8 @@ body::before{
       <div class="contact-item"><div class="ci">📞</div><div><small>Phone</small><a href="tel:+918446885026">8446885026</a></div></div>
       <div class="contact-item"><div class="ci">✉️</div><div><small>Email</small><a href="mailto:adnan588494@gmail.com">adnan588494@gmail.com</a></div></div>
       <div class="contact-item"><div class="ci">💬</div><div><small>WhatsApp</small><a href="https://wa.me/918446885026">Chat with Adnan Enterprises</a></div></div>
+<div class="contact-item"><div class="ci">📍</div><div><small>Location</small><a href="https://maps.app.goo.gl/gE4UUdgwNCmQBi5K9" target="_blank" rel="noopener">View on Google Maps</a></div></div>
+
       <div class="contact-actions"><a class="btn call" href="tel:+918446885026">Call Now</a><a class="btn wa" href="https://wa.me/918446885026">WhatsApp</a></div>
     </div>
   </div>
@@ -368,7 +422,7 @@ body::before{
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner"><span>© 2026 Adnan Enterprises. All rights reserved.</span><span>Sewing Machines • Repair • Kaj & Buttons • Tailoring Materials</span></div>
+  <div class="container footer-inner"><span>© 2026 Adnan Enterprises. All rights reserved.</span><span>Sewing Machines • Repair • Kaj & Buttons • Tailoring Materials &nbsp;|&nbsp; <a href="privacy-policy.html" style="font-weight:800;text-decoration:underline">Privacy Policy</a></span></div>
 </footer>
 <a class="float-wa" aria-label="WhatsApp Adnan Enterprises" href="https://wa.me/918446885026?text=Hello%20Adnan%20Enterprises%2C%20I%20have%20an%20enquiry.">☏</a>
 </body>
